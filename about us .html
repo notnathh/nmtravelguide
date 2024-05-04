@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ddd;
+        }
+        
+        .section{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #ddd;
+        }
+        .container{
+            display: block;
+            width: 80%;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .content-section{
+            float: left;
+            width: 55%;
+            
+        }
+        .image-section{
+            float: right;
+            max-width: 40%;
+            display: flex;
+            top: 50px;
+            margin-top: 40px;
+            margin-right: -35px;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 500px;
+        }
+        .content-section .title{
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+        .content-section .content h3{
+            margin-top: 28px;
+            color: #5d5d5d;
+            font-size: 20px;
+        }
+        .content-section .content p{
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            line-height: 1;
+        }
+        .content-section .content .button {
+            margin-top: 30px;
+        }
+        .content-section .content .button a{
+            background-color: #3d3d3d;
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #f1916d;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+        }
+        .content-section .content .button a:hover{
+            background-color: rgba(6, 20, 46, 0.8);
+            color: #fff;
+        }
+        
+        @media screen and (max-width: 758px){
+            .container{
+            display: block;
+            width: 80%;
+            margin: auto;
+            padding: 0;
+        }
+        .content-section{
+            float: none;
+            width: 105%;
+            display: block;
+            margin: auto;
+        }
+        .content-section .title{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+        }
+        .content-section .content h3{
+            margin-top: 28px;
+            color: #5d5d5d;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .content-section .content p{
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            line-height: 1;
+        }
+        .content-section .content .button {
+            text-align: center;
+        }
+        .content-section .content .button a{
+            padding: 9px 30px;
+        }
+        /*.content-section .social{
+            text-align: center;
+        }-*/
+        }
+        h3{
+            color: #f1916d;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="LOGO FINAL.png" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Popplaces.html">Popular Places</a></li>
+                <li><a href="about us .html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>Exploring the World Together</h3>
+                    <p>Welcome to our travel community! We're thrilled to share our passion for exploration and adventure with you.
+
+                    Our journey began with a simple idea: to create a platform that inspires and empowers travelers to embark on unforgettable journeys. As avid explorers ourselves, we understand the transformative power of travel. It's not just about visiting new places; it's about immersing ourselves in different cultures, connecting with people from all walks of life, and discovering the beauty and diversity of our world.
+                     With this vision in mind, we set out to curate a collection of travel guides that go beyond the ordinary tourist destinations. From hidden gems off the beaten path to iconic landmarks steeped in history, our guides are crafted with care and attention to detail, providing you with the insider knowledge and tips you need to make the most of your travels.
+                    But our mission goes beyond just providing information. We're here to foster a community of like-minded adventurers who share our love for exploration and discovery. Whether you're a seasoned globetrotter or a first-time traveler, we invite you to join us on this journey of discovery.
+                    Our team is comprised of passionate travelers, storytellers, and adventurers who bring their own unique perspectives and experiences to the table. Together, we're committed to helping you create memories that will last a lifetime.
+                 So whether you're planning your next big adventure or simply seeking inspiration for your wanderlust, you've come to the right place. Welcome to our travel community—where every journey begins with a single step, and every destination is an opportunity for discovery.
+                    Let's explore the world together.</p>
+                    <div class="button">
+                     <a href="AboutUs2.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images/LOGO COLORED final.png" alt="NM Travelguide Logo" class="footer-logo">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <h3>Contact Us</h3>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=61559308404110"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/TourismPHL"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/tourism_phl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

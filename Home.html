@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home</title>
+    <style>
+    header {
+        background-color: #1b3358; 
+            color: #F5D7DB;
+            padding: 20px;
+            text-align: center;
+            background-image: url(BG\ IMAGE.jpg); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 650px;
+            position: relative; 
+
+    }
+    h3{
+        color: #f1916d;
+    }
+
+    @media only screen and (max-width: 768px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background-color: #1b3358;
+            padding: 10px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul.show {
+            display: flex;
+        }
+
+        nav ul li {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            padding: 10px;
+        }
+
+        .mainicon {
+            display: block;
+            cursor: pointer;
+        }
+
+        .regions {
+            flex-direction: column;
+        }
+
+        .region {
+            margin-bottom: 15px;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="LOGO FINAL.png" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="Home.html"class="active">Home</a></li>
+                <li><a href="Popplaces.html">Popular Places</a></li>
+                <li><a href="about us .html">About Us</a></li>
+            </ul>
+        </nav>
+    
+    <div class="region-container"><br><br>
+        <h1>LUZON</h1>
+        <h2>Regions of Luzon Island, Philippines</h2>
+        <br>
+        <div class="regions">
+            <div class="region">
+                <a href="ilocos.html" class="region-link ">
+                <h3>Ilocos Region</h3>
+                <p5>The Ilocos Region is located in the northwest of Luzon. </p5> </a>
+            </div>
+            <div class="region1">
+                <a href="Cagayan Valley.html" class="region-link ">
+                <h3>Cagayan Valley</h3>
+                <p5>The Cagayan Valley is located in the northeast of Luzon. </p5> </a>
+                </div>
+
+            <div class="region2">
+                <a href="CAR.html" class="region-link ">
+                <h3>Cordillera Administrative Region (CAR)</h3>
+                <p5>CAR is situated in the northern part of Luzon.</p5> </a>
+            </div>
+            <div class="region3">
+                <a href="Central Luzon.html" class="region-link ">
+                <h3>Central Luzon</h3>
+                <p5>Central Luzon is located in the northeastern part of Luzon. </p5> </a>
+            </div>
+        
+        </div>
+        <div class="regions">
+            <div class="region4">
+                <a href="NCR.html" class="region-link ">
+                <h3>National Capital Region</h3>
+                <p5>National Capital Region is located in the central part of Luzon. </p5> </a>
+            </div>
+            <div class="region5">
+                <a href="Calabarzon.html" class="region-link ">
+                <h3>Calabarzon</h3>
+                <p5>Calabarzon is located in the southwestern part of Luzon. </p5> </a>
+            </div>
+            <div class="region6">
+                <a href="Mimaropa.html" class="region-link ">
+                <h3>Mimaropa</h3>
+                <p5>Mimaropa is located in the southern part of Luzon. </p5> </a>
+            </div>
+            <div class="region7">
+                <a href="Bicol.html" class="region-link ">
+                <h3>Bicol Region</h3>
+                <p5>Bicol Region is located in the southeastern part of Luzon. </p5> </a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<footer>
+    <div class="footer-container">
+        <h3>Contact Us</h3>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61559308404110"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/TourismPHL"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tourism_phl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

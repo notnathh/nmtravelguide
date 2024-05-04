@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        height: 25px; 
+        max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: rgba(6, 20, 46, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .logo img {
+        width: auto; 
+        height: 70px; 
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    li {
+        padding: 0rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #f1916d;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media only screen and (max-width:1024px) {
+        nav {
+            max-width: 98%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        html {
+            font-size: 80%;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        html {
+            font-size: 85%;
+        }
+
+        header {
+            height: 100vh;
+        }
+
+        li {
+            padding: 1rem 1.1rem;
+        }
+
+        .menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 4rem;
+            left: -100%;
+            background-color: #000000b5;
+            backdrop-filter: blur(10px);
+        }
+
+        #click:checked~ul {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+
+    }
+
+    .background-clip {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .region {
+        background-image: url(images/iLOCO2\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        background-color: #1b3358; 
+    }
+
+    .region1 {
+        background-image: url(images/Cagayan\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region2 {
+        background-image: url(images/CAR\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region3 {
+        background-image: url(images/Central\ Luzon\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region4 {
+        background-image: url(images/NCR\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region5 {
+        background-image: url(images/Calabarzon.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region6 {
+        background-image: url(images/mimaropa\ bg.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .region7 {
+        background-image: url(images/Bicol\ BG.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+    
+    .region h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .region1 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .region2 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .region3 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .region4 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .region5 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .region6 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .region7 h3 {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .region:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region1:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region2:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region3:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region4:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region5:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region6:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+    .region7:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 9px #F5D7DB;
+    }
+
+    
+    p5 {
+        margin-bottom: 0;
+        color: white;
+    }
+
+    
+    .regions{
+        display: flex;
+        gap: 18px;
+        padding-top: 15px;
+
+    }
+    .region-link{
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #1b3358;
+        color: #F5D7DB;
+        text-align: center;
+        padding: 10px; /* Adjust padding as needed */
+        width: 100%;
+    }
+    
+    .footer-container{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    .social a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    .social a i{
+        font-size: 2em;
+        color:  #f1916d;
+        opacity: 0.9;
+    }
+
+    .footer-logo {
+        max-width: 110px;
+        max-height: 110px;
+        margin-bottom: 1px;
+        padding-top:10px;
+    }
+
+    p1 {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+    }
+
+    
+
+
+    
